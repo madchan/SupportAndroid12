@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NotificationTrampolineLimitActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        android:layout_width="300dp"
+        android:text="点击【推送启动XX的通知】后，App将退到后台并推送一个通知。\n\n点击该通知将启动一个服务或广播，在该服务或广播之内会尝试启动一个Activity，但因通知Trampoline限制会启动失败。\n\n请关注Logcat的Error级别信息，看是否显示了一下消息：\nIndirect notification activity start (trampoline) from PACKAGE_NAME, \
+this should be avoided for performance reasons.\n\n如果验证失败，请尝试过几秒后再点击推送。"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="notificationToStartService"
+            android:text="推送启动服务的通知"
+            android:textColor="@color/white" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="notificationToStartBroadcastReceiver"
+            android:text="推送启动广播的通知"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
