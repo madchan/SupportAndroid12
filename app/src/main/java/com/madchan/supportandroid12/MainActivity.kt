@@ -39,6 +39,16 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun exactAlarmPermission(view: View) {
-        startActivity(Intent(this, ExactAlarmPermissionActivity::class.java))
+//        startActivity(Intent(this, ExactAlarmPermissionActivity::class.java))
+
+        Runtime.getRuntime().exec("device_config put app_hibernation app_hibernation_enabled true\n")
+        Runtime.getRuntime().exec("threshold=\$(adb shell device_config get permissions \\\n" +
+                "  auto_revoke_unused_threshold_millis2)\n")
+        Runtime.getRuntime().exec("device_config put permissions \\\n" +
+                "  auto_revoke_unused_threshold_millis2 1000\n")
+        Runtime.getRuntime().exec("am wait-for-broadcast-idle\n")
+        Runtime.getRuntime().exec("cmd jobscheduler run -u 0 -f \\\n" +
+                "  com.google.android.permissioncontroller 2\n")
+        Runtime.getRuntime().exec("cmd app_hibernation get-state ${packageName}\n")
     }
 }
