@@ -5,7 +5,6 @@ import android.app.AlarmManager.AlarmClockInfo
 import android.app.PendingIntent
 import android.content.Context
 import android.content.Intent
-import android.content.pm.PackageManager
 import android.net.Uri
 import android.os.Build
 import android.os.Bundle
@@ -13,11 +12,9 @@ import android.os.SystemClock
 import android.provider.Settings
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
-import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import com.madchan.supportandroid12.databinding.ActivityExactAlarmPermissionBinding
-import java.security.Permission
-import java.security.Permissions
+import com.madchan.supportandroid12.stateMachine.ExactAlarmPermissionStateMachine
 import java.util.*
 
 class ExactAlarmPermissionActivity : AppCompatActivity() {
@@ -42,6 +39,7 @@ class ExactAlarmPermissionActivity : AppCompatActivity() {
         super.onRestart()
         stateMachineLD.value = stateMachineLD.value?.nextState()
     }
+
     private fun addStateMachineObserver() {
         stateMachineLD.observe(this) {
             binding.textView.text =

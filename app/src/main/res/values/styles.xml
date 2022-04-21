@@ -1,10 +1,15 @@
 <resources>
 
-    <style name="Theme.Splash" parent="@android:style/Theme.Light.NoTitleBar.Fullscreen">
-        <item name="android:windowBackground">@color/teal_200</item>
-        <item name="android:windowFullscreen">true</item>
-        <item name="windowNoTitle">true</item>
-        <item name="windowActionBar">false</item>
+    <style name="Theme.App.Starting.Simple" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/teal_200</item>
+        <item name="windowSplashScreenAnimatedIcon">@color/transparent</item>
+        <item name="postSplashScreenTheme">@style/Theme.AppCompat</item>
+    </style>
+
+    <style name="Theme.App.Starting.Normal" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/teal_200</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_launcher_foreground</item>
+        <item name="postSplashScreenTheme">@style/Theme.AppCompat</item>
     </style>
 
 </resources>

@@ -1,6 +1,9 @@
-package com.madchan.supportandroid12
+package com.madchan.supportandroid12.stateMachine
 
+import com.madchan.supportandroid12.SPUtils
 import com.madchan.supportandroid12.SupportAndroid12Application.Companion.appContext
+import com.madchan.supportandroid12.hasDeclarePermission
+import com.madchan.supportandroid12.hasRequirePermission
 
 enum class ExactAlarmPermissionStateMachine {
 

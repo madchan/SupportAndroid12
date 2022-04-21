@@ -31,6 +31,13 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="appStartup"
+            android:text="应用启动画面"
+            android:textColor="@color/white" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:onClick="toggleMic"
             android:text="麦克风切换开关"
             android:textColor="@color/white" />
