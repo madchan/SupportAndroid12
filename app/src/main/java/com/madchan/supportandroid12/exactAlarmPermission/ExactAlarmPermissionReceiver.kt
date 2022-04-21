@@ -1,4 +1,4 @@
-package com.madchan.supportandroid12
+package com.madchan.supportandroid12.exactAlarmPermission
 
 import android.content.BroadcastReceiver
 import android.content.Context

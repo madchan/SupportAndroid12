@@ -1,8 +1,9 @@
-package com.madchan.supportandroid12
+package com.madchan.supportandroid12.notificationTrampolineLimit
 
 import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
+import com.madchan.supportandroid12.MainActivity
 
 class NotificationTrampolineLimitReceiver : BroadcastReceiver() {
 

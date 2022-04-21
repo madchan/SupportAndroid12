@@ -1,4 +1,4 @@
-package com.madchan.supportandroid12
+package com.madchan.supportandroid12.foregroundServiceLimit
 
 import android.content.Intent
 import android.os.Build
@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.os.Handler
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
+import com.madchan.supportandroid12.R
 
 class ForegroundServiceLimitActivity : AppCompatActivity() {
 

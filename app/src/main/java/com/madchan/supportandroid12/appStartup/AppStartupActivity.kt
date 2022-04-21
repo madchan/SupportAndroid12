@@ -1,15 +1,10 @@
-package com.madchan.supportandroid12.activity
+package com.madchan.supportandroid12.appStartup
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import androidx.lifecycle.MutableLiveData
 import com.madchan.supportandroid12.databinding.ActivityAppStartupBinding
-import com.madchan.supportandroid12.databinding.ActivityExactAlarmPermissionBinding
-import com.madchan.supportandroid12.stateMachine.AppStartupStateMachine
-import com.madchan.supportandroid12.stateMachine.ExactAlarmPermissionStateMachine
-import com.madchan.supportandroid12.stateMachine.SCHEME_SET_ICON_TRANSPARENT
-import com.madchan.supportandroid12.stateMachine.SCHEME_USE_SPLASH_SCREEN_API
 
 class AppStartupActivity : AppCompatActivity() {
 

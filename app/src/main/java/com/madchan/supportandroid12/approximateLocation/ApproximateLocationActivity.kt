@@ -1,4 +1,4 @@
-package com.madchan.supportandroid12
+package com.madchan.supportandroid12.approximateLocation
 
 import android.Manifest
 import android.content.pm.PackageManager
@@ -8,7 +8,6 @@ import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.madchan.supportandroid12.databinding.ActivityApproximateLocationBinding
-import com.madchan.supportandroid12.databinding.ActivityMainBinding
 
 class ApproximateLocationActivity : AppCompatActivity() {
 

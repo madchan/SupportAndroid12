@@ -1,8 +1,9 @@
-package com.madchan.supportandroid12
+package com.madchan.supportandroid12.notificationTrampolineLimit
 
 import android.app.Service
 import android.content.Intent
 import android.os.IBinder
+import com.madchan.supportandroid12.MainActivity
 
 class NotificationTrampolineLimitService : Service() {
 

@@ -18,44 +18,44 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SupportAndroid12">
         <activity
-            android:name=".activity.AppStartupActivity"
+            android:name=".appStartup.AppStartupActivity"
             android:exported="false" />
 
         <receiver
-            android:name=".ExactAlarmPermissionReceiver"
+            android:name=".exactAlarmPermission.ExactAlarmPermissionReceiver"
             android:enabled="true"
             android:exported="false" />
         <receiver
-            android:name=".NotificationTrampolineLimitReceiver"
+            android:name=".notificationTrampolineLimit.NotificationTrampolineLimitReceiver"
             android:enabled="true"
             android:exported="true" />
 
         <service
-            android:name=".NotificationTrampolineLimitService"
+            android:name=".notificationTrampolineLimit.NotificationTrampolineLimitService"
             android:enabled="true"
             android:exported="true" />
         <service
-            android:name=".ForegroundServiceLimitService"
+            android:name=".foregroundServiceLimit.ForegroundServiceLimitService"
             android:enabled="true"
             android:exported="true" />
 
         <activity
-            android:name=".ExactAlarmPermissionActivity"
+            android:name=".exactAlarmPermission.ExactAlarmPermissionActivity"
             android:exported="false" />
         <activity
-            android:name=".CustomNotificationActivity"
+            android:name=".customNotification.CustomNotificationActivity"
             android:exported="false" />
         <activity
-            android:name=".ApproximateLocationActivity"
+            android:name=".approximateLocation.ApproximateLocationActivity"
             android:exported="false" />
         <activity
-            android:name=".NotificationTrampolineLimitActivity"
+            android:name=".notificationTrampolineLimit.NotificationTrampolineLimitActivity"
             android:exported="false" />
         <activity
-            android:name=".ForegroundServiceLimitActivity"
+            android:name=".foregroundServiceLimit.ForegroundServiceLimitActivity"
             android:exported="false" />
         <activity
-            android:name=".ToggleMicActivity"
+            android:name=".toggleMicAndCamera.ToggleMicActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

@@ -1,4 +1,4 @@
-package com.madchan.supportandroid12
+package com.madchan.supportandroid12.customNotification
 
 import android.annotation.SuppressLint
 import android.app.NotificationChannel
@@ -9,6 +9,7 @@ import android.view.View
 import android.widget.RemoteViews
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.NotificationCompat
+import com.madchan.supportandroid12.R
 import com.madchan.supportandroid12.databinding.ActivityCustomNotificationBinding
 
 class CustomNotificationActivity : AppCompatActivity() {

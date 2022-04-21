@@ -1,4 +1,4 @@
-package com.madchan.supportandroid12.stateMachine
+package com.madchan.supportandroid12.exactAlarmPermission
 
 import com.madchan.supportandroid12.SPUtils
 import com.madchan.supportandroid12.SupportAndroid12Application.Companion.appContext

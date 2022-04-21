@@ -1,4 +1,4 @@
-package com.madchan.supportandroid12
+package com.madchan.supportandroid12.foregroundServiceLimit
 
 import android.app.*
 import android.app.NotificationManager.IMPORTANCE_HIGH
@@ -6,6 +6,7 @@ import android.content.Intent
 import android.os.Build
 import android.os.IBinder
 import androidx.core.app.NotificationCompat
+import com.madchan.supportandroid12.MainActivity
 
 class ForegroundServiceLimitService : Service() {
 

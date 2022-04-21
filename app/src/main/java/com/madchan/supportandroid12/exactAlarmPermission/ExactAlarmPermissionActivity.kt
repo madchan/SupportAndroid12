@@ -1,4 +1,4 @@
-package com.madchan.supportandroid12
+package com.madchan.supportandroid12.exactAlarmPermission
 
 import android.app.AlarmManager
 import android.app.AlarmManager.AlarmClockInfo
@@ -14,7 +14,6 @@ import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.MutableLiveData
 import com.madchan.supportandroid12.databinding.ActivityExactAlarmPermissionBinding
-import com.madchan.supportandroid12.stateMachine.ExactAlarmPermissionStateMachine
 import java.util.*
 
 class ExactAlarmPermissionActivity : AppCompatActivity() {

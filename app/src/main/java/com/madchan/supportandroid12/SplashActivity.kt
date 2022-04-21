@@ -3,11 +3,10 @@ package com.madchan.supportandroid12
 import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
-import android.util.Log
 import android.util.TypedValue
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
-import com.madchan.supportandroid12.activity.AppStartupActivity
+import com.madchan.supportandroid12.appStartup.AppStartupActivity
 import com.madchan.supportandroid12.databinding.ActivitySplashBinding
 import com.madchan.supportandroid12.stateMachine.AppStartupStateMachine
 
