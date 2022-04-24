@@ -7,8 +7,8 @@ import android.util.TypedValue
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import com.madchan.supportandroid12.appStartup.AppStartupActivity
+import com.madchan.supportandroid12.appStartup.AppStartupStateMachine
 import com.madchan.supportandroid12.databinding.ActivitySplashBinding
-import com.madchan.supportandroid12.stateMachine.AppStartupStateMachine
 
 
 class SplashActivity : AppCompatActivity() {
@@ -27,10 +27,10 @@ class SplashActivity : AppCompatActivity() {
         } else {
             // 验证常规方案请把以下一行取消注释，这样的话系统启动画面会持续覆盖原有的闪屏页，
             // 直到开始显示广告页
-            splashScreen.setKeepOnScreenCondition {
-                AppStartupStateMachine.save(AppStartupStateMachine.current().nextState())
-                true
-            }
+//            splashScreen.setKeepOnScreenCondition {
+//                AppStartupStateMachine.save(AppStartupStateMachine.current().nextState())
+//                true
+//            }
         }
 
         Handler(mainLooper).postDelayed({

@@ -44,6 +44,16 @@
             android:text="常规做法：改用SplashScreen API定制系统启动画面"
             android:textColor="@color/white" />
 
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="testOtherChange"
+            android:textAllCaps="false"
+            android:layout_marginTop="50dp"
+            android:gravity="left|center_vertical"
+            android:text="测试一下其他行为变更"
+            android:textColor="@color/white" />
+
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

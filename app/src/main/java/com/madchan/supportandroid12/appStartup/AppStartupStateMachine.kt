@@ -38,7 +38,7 @@ enum class AppStartupStateMachine {
     abstract fun nextState(scheme: Int? = null): AppStartupStateMachine
 
     companion object {
-        private const val KEY_CURRENT_STATE = "alarm_current_state"
+        private const val KEY_CURRENT_STATE = "app_startup_current_state"
 
         fun current(): AppStartupStateMachine {
             val value = SPUtils.getInstance(appContext).getString(KEY_CURRENT_STATE)
@@ -47,6 +47,10 @@ enum class AppStartupStateMachine {
 
         fun save(stateMachine: AppStartupStateMachine) {
             SPUtils.getInstance(appContext).put(KEY_CURRENT_STATE, stateMachine.name, true)
+        }
+
+        fun clear() {
+            SPUtils.getInstance(appContext).clear(true)
         }
     }
 }
