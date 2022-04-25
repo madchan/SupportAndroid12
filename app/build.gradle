@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 
-apply from: 'saferCompExporting.gradle'
+//apply from: 'saferCompExporting.gradle'
 
 android {
     compileSdkVersion 32
@@ -47,5 +47,5 @@ dependencies {
 
     implementation 'androidx.core:core-splashscreen:1.0.0-beta01'
 
-    implementation files('libs/library-release.aar')
+//    implementation files('libs/library-release.aar')
 }

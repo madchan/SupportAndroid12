@@ -9,34 +9,11 @@
     <TextView
         android:id="@+id/textView"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         android:layout_width="300dp"
-        android:text="要测试这项行为变更，请打开app模块下的build.gradle文件，将被注释掉的library-release.aar依赖给还原。\n\n该aar中包含一个使用到了intent-filter的Service，且没有显示声明android:exported 属性，将导致App无法安装。\n\n请还原后，Sync项目，并尝试重新运行。\n\n确认无法运行安装后，，请重新打开build.gradle文件，将顶部被注释的saferCompExporting.gradle的引入还原。\n\n"
+        android:text="要测试这项行为变更，请先打开app模块下的build.gradle文件，将被注释掉的library-release.aar依赖给还原。\n\n该aar中包含一个使用到了intent-filter的Service，且没有显式声明android:exported 属性，将导致App无法安装。\n\n请还原后，Sync项目，并尝试重新运行。\n\n确认无法运行安装后，，请重新打开build.gradle文件，将顶部被注释的saferCompExporting.gradle的引入还原。\n\n该gradle文件中包含一个Task，会再打包时检测合并后的AndroidManifest.xml，并自动声明android:exported 属性。\n\n请还原后，Sync项目，再尝试重新运行。"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_height="wrap_content"/>
-
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="left"
-        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="testOtherChange"
-            android:textAllCaps="false"
-            android:layout_marginTop="50dp"
-            android:gravity="left|center_vertical"
-            android:text="已确认"
-            android:textColor="@color/white" />
-
-    </LinearLayout>
+        android:layout_height="wrap_content"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
