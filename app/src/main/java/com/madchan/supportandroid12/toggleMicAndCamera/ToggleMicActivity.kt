@@ -58,7 +58,7 @@ class ToggleMicActivity : AppCompatActivity() {
                         binding.textView.text = "现在，请在状态栏下拉打开快捷设置菜单，关闭麦克风开关。\n\n若没找到，请点击快捷设置菜单右上角编辑按钮，将麦克风开关拖拽到菜单中。"
                         Handler(mainLooper).postDelayed({
                             binding.textView.text = "若已关闭麦克风开关，状态栏中的标志应会消失。\n\n此时录音仍在持续，但输出会变为一段无声音频，可停止录音并聆听来验证。"
-                        }, 10 * 1000)
+                        }, 10 * 1000L)
                     }
                     startTimes > 1 ->  binding.textView.text = "验证结束，如Demo演示有问题，可上GitHub上提issue，谢谢～"
                 }

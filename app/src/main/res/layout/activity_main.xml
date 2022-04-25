@@ -45,6 +45,13 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="saferComponentExporting"
+            android:text="更安全的组件导出"
+            android:textColor="@color/white" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:onClick="foregroundServiceLimit"
             android:text="前台服务启动限制"
             android:textColor="@color/white" />

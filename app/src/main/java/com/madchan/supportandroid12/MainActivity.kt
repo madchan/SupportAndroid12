@@ -52,4 +52,8 @@ class MainActivity : AppCompatActivity() {
     fun appStartup(view: View) {
         startActivity(Intent(this, AppStartupActivity::class.java))
     }
+
+    fun saferComponentExporting(view: View) {
+
+    }
 }

@@ -18,6 +18,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SupportAndroid12">
         <activity
+            android:name=".saferComponentExporting.SaferComponentExportingActivity"
+            android:exported="false" />
+        <activity
             android:name=".appStartup.AppStartupActivity"
             android:exported="false" />
 
@@ -64,10 +67,11 @@
             android:name=".SplashActivity"
             android:exported="true"
             android:theme="@style/Theme.App.Starting.Normal">
-<!--        <activity-->
-<!--            android:name=".SplashActivity"-->
-<!--            android:exported="true"-->
-<!--            android:theme="@style/Theme.App.Starting.Simple" >-->
+
+            <!-- <activity -->
+            <!-- android:name=".SplashActivity" -->
+            <!-- android:exported="true" -->
+            <!-- android:theme="@style/Theme.App.Starting.Simple" > -->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
