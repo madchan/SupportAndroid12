@@ -11,6 +11,7 @@ import com.madchan.supportandroid12.databinding.ActivityMainBinding
 import com.madchan.supportandroid12.exactAlarmPermission.ExactAlarmPermissionActivity
 import com.madchan.supportandroid12.foregroundServiceLimit.ForegroundServiceLimitActivity
 import com.madchan.supportandroid12.notificationTrampolineLimit.NotificationTrampolineLimitActivity
+import com.madchan.supportandroid12.pendingIntentsMutability.PendingIntentsMutabilityActivity
 import com.madchan.supportandroid12.saferComponentExporting.SaferComponentExportingActivity
 import com.madchan.supportandroid12.toggleMicAndCamera.ToggleMicActivity
 
@@ -56,5 +57,9 @@ class MainActivity : AppCompatActivity() {
 
     fun saferComponentExporting(view: View) {
         startActivity(Intent(this, SaferComponentExportingActivity::class.java))
+    }
+
+    fun pendingIntentsMutability(view: View) {
+        startActivity(Intent(this, PendingIntentsMutabilityActivity::class.java))
     }
 }
