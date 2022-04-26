@@ -6,8 +6,8 @@ import android.os.Handler
 import android.util.TypedValue
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
-import com.madchan.supportandroid12.appStartup.AppStartupActivity
-import com.madchan.supportandroid12.appStartup.AppStartupStateMachine
+import com.madchan.supportandroid12.appSplashScreens.AppSplashScreensActivity
+import com.madchan.supportandroid12.appSplashScreens.AppStartupStateMachine
 import com.madchan.supportandroid12.databinding.ActivitySplashBinding
 
 
@@ -42,7 +42,7 @@ class SplashActivity : AppCompatActivity() {
         Handler(mainLooper).postDelayed({
 
             if(AppStartupStateMachine.END == AppStartupStateMachine.current()){
-                startActivity(Intent(this, AppStartupActivity::class.java))
+                startActivity(Intent(this, AppSplashScreensActivity::class.java))
             } else {
                 startActivity(Intent(this, MainActivity::class.java))
             }

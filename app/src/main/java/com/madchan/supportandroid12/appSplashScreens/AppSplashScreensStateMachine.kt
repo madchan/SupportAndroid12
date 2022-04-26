@@ -1,4 +1,4 @@
-package com.madchan.supportandroid12.appStartup
+package com.madchan.supportandroid12.appSplashScreens
 
 import com.madchan.supportandroid12.SPUtils
 import com.madchan.supportandroid12.SupportAndroid12Application.Companion.appContext

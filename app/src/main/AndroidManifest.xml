@@ -21,10 +21,10 @@
             android:name=".pendingIntentsMutability.PendingIntentsMutabilityActivity"
             android:exported="false" />
         <activity
-            android:name=".pendingIntentsMutability.SaferComponentExportingActivity"
+            android:name=".saferComponentExporting.SaferComponentExportingActivity"
             android:exported="false" />
         <activity
-            android:name=".appStartup.AppStartupActivity"
+            android:name=".appSplashScreens.AppSplashScreensActivity"
             android:exported="false" />
 
         <receiver

@@ -4,7 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
-import com.madchan.supportandroid12.appStartup.AppStartupActivity
+import com.madchan.supportandroid12.appSplashScreens.AppSplashScreensActivity
 import com.madchan.supportandroid12.approximateLocation.ApproximateLocationActivity
 import com.madchan.supportandroid12.customNotification.CustomNotificationActivity
 import com.madchan.supportandroid12.databinding.ActivityMainBinding
@@ -52,7 +52,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun appStartup(view: View) {
-        startActivity(Intent(this, AppStartupActivity::class.java))
+        startActivity(Intent(this, AppSplashScreensActivity::class.java))
     }
 
     fun saferComponentExporting(view: View) {

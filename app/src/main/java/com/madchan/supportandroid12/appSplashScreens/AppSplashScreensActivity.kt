@@ -1,23 +1,22 @@
-package com.madchan.supportandroid12.appStartup
+package com.madchan.supportandroid12.appSplashScreens
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.MutableLiveData
 import com.madchan.supportandroid12.MainActivity
-import com.madchan.supportandroid12.customNotification.CustomNotificationActivity
-import com.madchan.supportandroid12.databinding.ActivityAppStartupBinding
+import com.madchan.supportandroid12.databinding.ActivityAppSplashScreensBinding
 
-class AppStartupActivity : AppCompatActivity() {
+class AppSplashScreensActivity : AppCompatActivity() {
 
-    lateinit var binding: ActivityAppStartupBinding
+    lateinit var binding: ActivityAppSplashScreensBinding
 
     private val stateMachineLD = MutableLiveData(AppStartupStateMachine.current())
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityAppStartupBinding.inflate(layoutInflater)
+        binding = ActivityAppSplashScreensBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         addStateMachineObserver()
