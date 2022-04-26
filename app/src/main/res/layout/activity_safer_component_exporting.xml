@@ -10,7 +10,7 @@
         android:id="@+id/textView"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_width="300dp"
-        android:text="要测试这项行为变更，请先打开app模块下的build.gradle文件，将被注释掉的library-release.aar依赖给还原。\n\n该aar中包含一个使用到了intent-filter的Service，且没有显式声明android:exported 属性，将导致App无法安装。\n\n请还原后，Sync项目，并尝试重新运行。\n\n确认无法运行安装后，，请重新打开build.gradle文件，将顶部被注释的saferCompExporting.gradle的引入还原。\n\n该gradle文件中包含一个Task，会再打包时检测合并后的AndroidManifest.xml，并自动声明android:exported 属性。\n\n请还原后，Sync项目，再尝试重新运行。"
+        android:text="要测试这项行为变更，请先打开app模块下的build.gradle文件，将被注释掉的library-release.aar依赖给还原。\n\n该aar中包含一个使用到了intent-filter的Service，且没有显式声明android:exported 属性，将导致App无法安装。\n\n请还原后，Sync项目，并尝试重新运行。\n\n确认无法运行安装后，，请重新打开build.gradle文件，将顶部被注释的saferCompExporting.gradle的引入还原。\n\n该gradle文件中包含一个Task，会在打包时检测合并后的AndroidManifest.xml，并自动声明android:exported 属性。\n\n请还原后，Sync项目，再尝试重新运行。"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
